@@ -1,1 +1,192 @@
 # ABox
+
+Abox is a simple container component that can be used to wrap other components. It can be used to add padding, margin, background color, border radius, and other styles to the wrapped components.
+
+import { AButton, AButtonText } from "../../components/abutton"
+import { ABox } from "../../components/abox"
+
+
+<ABox bg="#06241A" px={50} py={100} mt={50} radius={20}>
+    
+</ABox>
+
+### Installation
+
+
+```sh copy npx2yarn
+npx attlr a abox
+```
+
+### Usage
+
+```tsx copy
+import { ABox } from "abox"
+
+<ABox bg="#06241A" px={50} py={100} mt={50} radius={20}>
+    // Your child components here...
+</ABox>
+```
+
+### Component Props
+
+#### bg 
+The background color of the box. It can be a color `string` or a hex code.
+
+- `transparent` (default)
+
+#### border
+The border width of the box.
+
+- `0` (default)
+
+#### radius
+The border radius of the box.
+
+- `0` (default)
+
+#### padding
+
+The padding of the box.
+
+- `0` (default)
+
+#### margin
+
+The margin of the box.
+
+- `0` (default)
+
+#### width
+
+The width of the box.
+
+- `auto` (default)
+
+#### height
+
+The height of the box.
+
+- `auto` (default)
+
+#### px
+
+The horizontal padding of the box.
+
+- `0` (default)
+
+#### py
+
+The vertical padding of the box.
+
+- `0` (default)
+
+#### pt
+
+The top padding of the box.
+
+- `0` (default)
+
+#### pb
+
+The bottom padding of the box.
+
+- `0` (default)
+
+#### pl
+
+The left padding of the box.
+
+- `0` (default)
+
+#### pr
+
+The right padding of the box.
+
+- `0` (default)
+
+#### mx
+
+The horizontal margin of the box.
+
+- `0` (default)
+
+#### my
+
+The vertical margin of the box.
+
+- `0` (default)
+
+#### mt
+
+The top margin of the box.
+
+- `0` (default)
+
+#### mb
+
+The bottom margin of the box.
+
+- `0` (default)
+
+#### ml
+
+The left margin of the box.
+
+- `0` (default)
+
+#### mr
+
+The right margin of the box.
+
+- `0` (default)
+
+#### elevation
+
+The elevation of the box.
+
+- `0` (default)
+
+#### shadowColor
+
+The shadow color of the box.
+
+- `#000` (default)
+
+#### shadowOffset
+
+The shadow offset of the box.
+
+- `{ width: 0, height: 0 }` (default)
+
+#### shadowOpacity
+
+The shadow opacity of the box.
+
+- `0` (default)
+
+#### shadowRadius
+
+The shadow radius of the box.
+
+- `0` (default)
+
+It also accepts all the default props of a [`View`](https://reactnative.dev/docs/view#props) component in react-native.
+
+### Example
+
+```tsx copy
+import { ABox } from "abox"
+
+<ABox bg="#06241A" px={50} py={100} mt={50} radius={20}>
+    // Your child components here...
+    <AButton bg="#FFC700" px={20} py={10} radius={10}>
+        <AButtonText color="#06241A" size={20} weight="bold">
+            Click Me
+        </AButtonText>
+    </AButton>
+</ABox>
+
+```
+
+
+
