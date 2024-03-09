@@ -1,1 +1,129 @@
 # AButton
+
+AButton is a button component that can be used to trigger an action, it uses a [Pressable](https://reactnative.dev/docs/pressable) under the hood.
+
+import { AButton, AButtonText } from "../../components/abutton"
+import { ABox } from "../../components/abox"
+
+
+<ABox bg="#06241A" px={50} py={100} mt={50} radius={20}>
+    <AButton>
+        <AButtonText>Button</AButtonText>
+    </AButton>
+</ABox>
+
+### Installation
+
+```sh copy npx2yarn
+npx attlr a abutton
+```
+
+### Usage
+
+```tsx copy
+import { AButton, AButtonText } from "abutton"
+
+<AButton>
+    <AButtonText>Button</AButtonText>
+</AButton>
+
+```
+
+### Component Props
+
+#### AButton
+
+##### Icon
+Make the button an icon button (no text). Default is `false`
+
+```tsx copy
+// You are required to pass an iconLeft/iconRight when using the icon prop
+<AButton 
+    icon
+    iconLeft={<Icon name="arrow-left" size={20} color="#fff" />}
+>
+    <AButtonText>Button</AButtonText>
+</AButton>
+    
+```
+
+##### IconLeft
+Icon to be displayed on the left side of the button
+
+##### IconRight
+Icon to be displayed on the right side of the button
+
+##### Fill
+Fill of the button
+
+- solid: solid fill
+- outline: outlined fill
+
+##### Variant
+
+Variant of the button
+
+- default: default button
+- danger: danger button
+- ghost: ghost button
+- outline: outlined button
+
+##### Loading
+Loading state of the button. Default is `false`
+
+##### Size
+
+Size of the button
+
+- sm: small
+- md: medium
+- lg: large
+- full: full width
+
+
+##### LoadingColor
+Color of the loading indicator. Default is `#fff`
+
+##### LoadSize
+
+Size of the loading indicator
+
+- small: small size
+- large: large size
+
+##### CustomLoadingIndicator
+Custom loading indicator
+
+```tsx copy
+
+<AButton 
+    loading
+    customLoadingIndicator={<ActivityIndicator size="small" color="#fff" />}
+>
+    <AButtonText>Button</AButtonText>
+</AButton>
+
+```
+
+#### AButtonText
+
+##### Variant
+
+Variant of the button
+
+- default: default button
+- danger: danger button
+- ghost: ghost button
+- outline: outlined button
+
+##### Size
+
+Size of the button
+
+- sm: small
+- md: medium
+- lg: large
+- full: full width
+
+
+

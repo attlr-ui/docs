@@ -1,8 +1,16 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
+import Image from "next/image";
 
 const config: DocsThemeConfig = {
-	logo: <span>My Project</span>,
+	logo: (
+		<Image
+			src="/images/logo.png"
+			alt="Hello"
+			width={50}
+			height={50}
+		/>
+	),
 	project: {
 		link: "https://github.com/attlr-ui/docs",
 	},
@@ -11,7 +19,18 @@ const config: DocsThemeConfig = {
 	// },
 	docsRepositoryBase: "https://github.com/attlr-ui/docs",
 	footer: {
-		component: <div>Axole</div>,
+		text: (
+			<span>
+				MIT {new Date().getFullYear()} ©{" "}
+				<a
+					href="https://nextra.site"
+					target="_blank"
+				>
+					Nextra
+				</a>
+				.
+			</span>
+		),
 	},
 	useNextSeoProps() {
 		return {
@@ -29,6 +48,8 @@ const config: DocsThemeConfig = {
 		dark: 500,
 		light: 530,
 	},
+	faviconGlyph: "📚",
+	logoLink: "/",
 };
 
 export default config;
