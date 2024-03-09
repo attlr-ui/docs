@@ -1,7 +1,7 @@
 {
   "name": "Attr UI Docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Documentation for Attr UI",
   "scripts": {
     "dev": "next dev",
     "build": "npx tailwindcss -o styles.css --minify && next build",
