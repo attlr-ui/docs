@@ -1,7 +1,6 @@
 {
   "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "installation": "Installation",
   "about": {
     "title": "About",
     "type": "page"
@@ -11,5 +10,14 @@
     "type": "page",
     "href": "https://github.com/attlr-ui/ui-components/discussions/new?category=q-a",
     "newWindow": true
+  },
+  "components": {
+    "title": "Components"
+  },
+  "recipes": {
+    "title": "Recipes"
+  },
+  "cli": {
+    "title": "CLI"
   }
 }
