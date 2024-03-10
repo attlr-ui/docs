@@ -98,4 +98,34 @@ const ABox: React.FC<ABoxProps> = (props): React.JSX.Element => {
 	);
 };
 
-export { ABox, type ABoxProps };
+declare type ABoxPropsD = ViewProps & {
+	bg?: string;
+	border?: number;
+	radius?: number;
+	padding?: number;
+	margin?: number;
+	width?: number;
+	height?: number;
+	px?: number;
+	py?: number;
+	pt?: number;
+	pb?: number;
+	pl?: number;
+	pr?: number;
+	mx?: number;
+	my?: number;
+	mt?: number;
+	mb?: number;
+	ml?: number;
+	mr?: number;
+	elevation?: number;
+	shadowColor?: string;
+	shadowOffset?: {
+		width: number;
+		height: number;
+	};
+	shadowOpacity?: number;
+	shadowRadius?: number;
+};
+
+export { ABox, type ABoxPropsD as ABoxProps };
